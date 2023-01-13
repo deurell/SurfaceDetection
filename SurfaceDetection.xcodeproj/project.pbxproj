@@ -12,7 +12,6 @@
 		73C004A92962D589006ACE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C004A82962D589006ACE0D /* Assets.xcassets */; };
 		73C004AC2962D589006ACE0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C004AB2962D589006ACE0D /* Preview Assets.xcassets */; };
 		73C004B32962D877006ACE0D /* DetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C004B22962D877006ACE0D /* DetectionView.swift */; };
-		73C004B529631F5F006ACE0D /* PlaneAnchorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C004B429631F5F006ACE0D /* PlaneAnchorEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		73C004A82962D589006ACE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C004AB2962D589006ACE0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73C004B22962D877006ACE0D /* DetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionView.swift; sourceTree = "<group>"; };
-		73C004B429631F5F006ACE0D /* PlaneAnchorEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneAnchorEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 		73C004A32962D589006ACE0D /* SurfaceDetection */ = {
 			isa = PBXGroup;
 			children = (
-				73C004B429631F5F006ACE0D /* PlaneAnchorEntity.swift */,
 				73C004A42962D589006ACE0D /* SurfaceDetectionApp.swift */,
 				73C004A62962D589006ACE0D /* ContentView.swift */,
 				73C004B22962D877006ACE0D /* DetectionView.swift */,
@@ -145,7 +142,6 @@
 			files = (
 				73C004A72962D589006ACE0D /* ContentView.swift in Sources */,
 				73C004A52962D589006ACE0D /* SurfaceDetectionApp.swift in Sources */,
-				73C004B529631F5F006ACE0D /* PlaneAnchorEntity.swift in Sources */,
 				73C004B32962D877006ACE0D /* DetectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
