@@ -39,26 +39,28 @@ class DetectionView: ARView, ARSessionDelegate {
     }
     
     private func setupScene() {
-        let anchor = AnchorEntity(.plane(.horizontal, classification: .any,
-                                         minimumBounds: [0.5, 0.5]))
         printAnchorState()
         arView.environment.lighting.intensityExponent = 2.0
-        scene.anchors.append(anchor)
+
+        let anchor = AnchorEntity(.plane(.horizontal, classification: .any,
+                                         minimumBounds: [0.5, 0.5]))
+        anchor.transform.scale = .init(repeating: Constants.scale)
         self.anchorEntity = anchor
+        scene.anchors.append(anchor)
         
         sub = arView.scene.subscribe(to: SceneEvents.AnchoredStateChanged.self) {[weak self] event in
             guard let self = self,
                   let anchorEntity = self.anchorEntity,
                   let fishEntity = try? Entity.load(named: "fish_sardine")
             else { fatalError() }
-            
+
             self.printAnchorState()
-            fishEntity.position = Constants.fishStartPosition
-            anchorEntity.transform.scale = .init(repeating: Constants.scale)
+            fishEntity.transform = Transform(scale: .init(repeating: 1),
+                                             rotation: .init(),
+                                             translation: Constants.fishStartPosition / Constants.scale)
             self.fish = fishEntity
             anchorEntity.addChild(fishEntity)
-            self.anchorEntity?.addChild(fishEntity)
-            
+             
             self.setupGestureRecognizers()
         }
     }
