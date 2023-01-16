@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739810272975AF3300D24B70 /* fish_sardine.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 739810262975AF3300D24B70 /* fish_sardine.usdz */; };
+		739D80A9297553B300B91DD5 /* AnimationResource+Bezier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739D80A8297553B300B91DD5 /* AnimationResource+Bezier.swift */; };
 		73C004A52962D589006ACE0D /* SurfaceDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C004A42962D589006ACE0D /* SurfaceDetectionApp.swift */; };
 		73C004A72962D589006ACE0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C004A62962D589006ACE0D /* ContentView.swift */; };
 		73C004A92962D589006ACE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C004A82962D589006ACE0D /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		739810262975AF3300D24B70 /* fish_sardine.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; name = fish_sardine.usdz; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/fish_sardine.usdz"; sourceTree = "<group>"; };
+		739D80A8297553B300B91DD5 /* AnimationResource+Bezier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnimationResource+Bezier.swift"; sourceTree = "<group>"; };
 		73C004A12962D589006ACE0D /* SurfaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C004A42962D589006ACE0D /* SurfaceDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceDetectionApp.swift; sourceTree = "<group>"; };
 		73C004A62962D589006ACE0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,10 +57,12 @@
 		73C004A32962D589006ACE0D /* SurfaceDetection */ = {
 			isa = PBXGroup;
 			children = (
+				739810262975AF3300D24B70 /* fish_sardine.usdz */,
+				739D80A8297553B300B91DD5 /* AnimationResource+Bezier.swift */,
 				73C004A42962D589006ACE0D /* SurfaceDetectionApp.swift */,
 				73C004A62962D589006ACE0D /* ContentView.swift */,
-				73C004B22962D877006ACE0D /* DetectionView.swift */,
 				73C004A82962D589006ACE0D /* Assets.xcassets */,
+				73C004B22962D877006ACE0D /* DetectionView.swift */,
 				73C004AA2962D589006ACE0D /* Preview Content */,
 			);
 			path = SurfaceDetection;
@@ -128,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739810272975AF3300D24B70 /* fish_sardine.usdz in Resources */,
 				73C004AC2962D589006ACE0D /* Preview Assets.xcassets in Resources */,
 				73C004A92962D589006ACE0D /* Assets.xcassets in Resources */,
 			);
@@ -141,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C004A72962D589006ACE0D /* ContentView.swift in Sources */,
+				739D80A9297553B300B91DD5 /* AnimationResource+Bezier.swift in Sources */,
 				73C004A52962D589006ACE0D /* SurfaceDetectionApp.swift in Sources */,
 				73C004B32962D877006ACE0D /* DetectionView.swift in Sources */,
 			);
