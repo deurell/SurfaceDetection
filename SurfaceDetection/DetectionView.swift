@@ -46,11 +46,13 @@ class DetectionView: ARView, ARSessionDelegate {
         scene.anchors.append(anchor)
         self.anchorEntity = anchor
         
-        sub = arView.scene.subscribe(to: SceneEvents.AnchoredStateChanged.self) {event in
-            guard let anchorEntity = self.anchorEntity else { fatalError() }
-            guard let fishEntity = try? Entity.load(named: "fish_sardine") else { fatalError() }
-            self.printAnchorState()
+        sub = arView.scene.subscribe(to: SceneEvents.AnchoredStateChanged.self) {[weak self] event in
+            guard let self = self,
+                  let anchorEntity = self.anchorEntity,
+                  let fishEntity = try? Entity.load(named: "fish_sardine")
+            else { fatalError() }
             
+            self.printAnchorState()
             fishEntity.position = Constants.fishStartPosition
             anchorEntity.transform.scale = .init(repeating: Constants.scale)
             self.fish = fishEntity
