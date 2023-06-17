@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73A8C34F2A3DFC6700CBECF1 /* simd_float4x4+Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8C34E2A3DFC6700CBECF1 /* simd_float4x4+Translation.swift */; };
 		73C004A52962D589006ACE0D /* SurfaceDetectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C004A42962D589006ACE0D /* SurfaceDetectionApp.swift */; };
 		73C004A72962D589006ACE0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C004A62962D589006ACE0D /* ContentView.swift */; };
 		73C004A92962D589006ACE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C004A82962D589006ACE0D /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		73A8C34E2A3DFC6700CBECF1 /* simd_float4x4+Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "simd_float4x4+Translation.swift"; sourceTree = "<group>"; };
 		73C004A12962D589006ACE0D /* SurfaceDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfaceDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C004A42962D589006ACE0D /* SurfaceDetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfaceDetectionApp.swift; sourceTree = "<group>"; };
 		73C004A62962D589006ACE0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				73C004A42962D589006ACE0D /* SurfaceDetectionApp.swift */,
 				73C004A62962D589006ACE0D /* ContentView.swift */,
 				73C004B22962D877006ACE0D /* DetectionView.swift */,
+				73A8C34E2A3DFC6700CBECF1 /* simd_float4x4+Translation.swift */,
 				73C004A82962D589006ACE0D /* Assets.xcassets */,
 				73C004AA2962D589006ACE0D /* Preview Content */,
 			);
@@ -144,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C004A72962D589006ACE0D /* ContentView.swift in Sources */,
+				73A8C34F2A3DFC6700CBECF1 /* simd_float4x4+Translation.swift in Sources */,
 				73C004A52962D589006ACE0D /* SurfaceDetectionApp.swift in Sources */,
 				73C004B529631F5F006ACE0D /* PlaneAnchorEntity.swift in Sources */,
 				73C004B32962D877006ACE0D /* DetectionView.swift in Sources */,
